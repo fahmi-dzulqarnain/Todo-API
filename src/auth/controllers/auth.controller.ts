@@ -25,14 +25,14 @@ export class AuthController {
 
     @Post('signIn')
     @HttpCode(HttpStatus.OK)
-    @ApiOperation({ summary: 'Sign in a user' })
+    @ApiOperation({ summary: 'Signing in a user' })
+    @ApiBody({ type: SignInDTO })
     @ApiResponse({
         status: 200,
         description: 'User successfully signed in',
         type: SignInResponse,
     })
     @ApiResponse({ status: 400, description: 'Invalid input data' })
-    @ApiBody({ type: SignInDTO })
     signIn (@Body() dto: SignInDTO): Promise<APIResponse<SignInResponse>> {
         return this.service.signIn(dto)
     }
