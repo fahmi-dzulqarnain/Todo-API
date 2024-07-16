@@ -1,4 +1,3 @@
-import { Transform } from 'class-transformer'
 import { IsBoolean, IsNotEmpty, IsString, IsUUID } from 'class-validator'
 import { UUID } from 'typeorm/driver/mongodb/bson.typings'
 

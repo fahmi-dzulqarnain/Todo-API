@@ -1,4 +1,4 @@
-import { UserEntity } from 'src/auth/models/user.entity'
+import { UserEntity } from '../../auth/models/user.entity'
 import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm'
 import { UUID } from 'typeorm/driver/mongodb/bson.typings'
 
